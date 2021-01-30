@@ -2,7 +2,7 @@ import React from "react";
 import CreateMeal from "./CreateMeal";
 var TaskSection = () => {
   var newTask = function (ev) {
-    if (ev.key == "Enter") {
+    if (ev.key === "Enter") {
       console.log("task " + ev.target.value);
       let task = `<p>${ev.target.value}</p>`;
       // console.log(task);
@@ -14,7 +14,7 @@ var TaskSection = () => {
   };
   const ingredients = [];
   var newMeal = function (ev) {
-    if (ev.key == "Enter") {
+    if (ev.key === "Enter") {
       // console.log("task " + ev.target.value);
       ingredients.push(ev.target.value);
       // console.log(ingredients);
