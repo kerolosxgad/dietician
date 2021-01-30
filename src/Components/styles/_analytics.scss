@@ -1,0 +1,36 @@
+.analytics-section-container {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  justify-items: center;
+  position: relative;
+  // padding: 0 2rem;
+  .user-image {
+    width: 12rem;
+    margin-top: 1rem;
+    margin-bottom: -12rem;
+    z-index: 2;
+
+    img {
+      border-radius: 25rem;
+      max-width: 100%;
+    }
+  }
+  .analytics-card {
+    // border: 1px solid black;
+    background-color: $base-grey;
+    padding: 6rem 1rem 0 1rem;
+    max-width: 90%;
+    p {
+      padding: 0.4rem 1rem;
+      margin: 0.6rem 0;
+      background-color: $base-green;
+      border-radius: 5rem;
+      color: $base-blue;
+    }
+    .analytics-chart {
+      margin-top: 2rem;
+      padding: 5.5rem 2rem;
+      border-radius: 1rem;
+    }
+  }
+}
